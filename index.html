@@ -1,151 +1,532 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LBO - Monitoramento Ambiental</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LBO Consultoria Ambiental | Licenciamento, Efluentes e Produtos Controlados</title>
+<meta name="description" content="LBO — Luciano Batista de Oliveira, Gestor Ambiental e Técnico Químico. Licenciamento ambiental e Polícia Federal, produtos químicos controlados, tratamento de efluentes, dimensionamento de ETE, controle operacional e treinamento. Pouso Alegre - MG.">
+<meta name="keywords" content="licenciamento ambiental, produtos químicos controlados, Polícia Federal, tratamento de efluentes, dimensionamento de ETE, controle operacional, consultoria ambiental, Pouso Alegre, Sul de Minas">
+<meta name="author" content="LBO Consultoria Ambiental">
+<meta name="theme-color" content="#21462C">
+<link rel="canonical" href="https://lboambiental.com.br/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LBO Consultoria Ambiental">
+<meta property="og:title" content="LBO Consultoria Ambiental | Licenciamento, Efluentes e Produtos Controlados">
+<meta property="og:description" content="Gestor Ambiental e Técnico Químico. Licenciamento ambiental e Polícia Federal, produtos químicos controlados, efluentes e ETE. Pouso Alegre - MG.">
+<meta property="og:image" content="og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="og-image.png">
+<!-- IMPORTANTE ao publicar: troque canonical/og:url/og:image para o domínio real, ex.: https://SEUDOMINIO/og-image.png -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"LBO Consultoria Ambiental","description":"Consultoria ambiental e química: licenciamento ambiental e Polícia Federal, produtos químicos controlados, tratamento de efluentes, dimensionamento de ETE, controle operacional e treinamento.","areaServed":{"@type":"Place","name":"Sul de Minas Gerais"},"address":{"@type":"PostalAddress","streetAddress":"Rua Maria de Lourdes Soares, 36 - Bairro Belo Horizonte","addressLocality":"Pouso Alegre","addressRegion":"MG","addressCountry":"BR"},"telephone":"+55-35-91001-7236","founder":{"@type":"Person","name":"Luciano Batista de Oliveira","jobTitle":"Gestor Ambiental e Técnico Químico"},"knowsAbout":["Licenciamento ambiental","Produtos químicos controlados","Polícia Federal","Tratamento de efluentes","Dimensionamento de ETE","Controle operacional"]}
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='47' fill='%232E5E3C'/%3E%3Cpath d='M50 21 C68 32 71 55 52 82 L48 82 C29 55 32 32 50 21 Z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#2E5E3C; --green2:#21462C; --green3:#3C7A4B; --leaf:#6FA86A; --leaf2:#8FC178;
+  --lime:#A7D26A; --ink:#1b2a1f; --muted:#5c6b5c; --line:#e0e8dd; --bg:#ffffff; --bg2:#f1f5ef;
+  --wa:#25D366; --water:#8FD0EC; --amber:#E0A94B;
+  --shadow:0 18px 45px -20px rgba(20,50,30,.35); --shadow-sm:0 10px 30px -18px rgba(20,50,30,.4); --r:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Poppins,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;overflow-x:hidden}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+.center{text-align:center}
+img,svg{display:block}
+a{color:inherit;text-decoration:none}
+.eyebrow{font-size:.82rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--green3)}
+.title{font-size:clamp(1.7rem,3.6vw,2.6rem);font-weight:800;letter-spacing:-.02em;color:var(--ink);margin-top:10px;line-height:1.12}
+.lead{color:var(--muted);font-size:1.06rem;max-width:640px;margin:14px auto 0}
+.sec{padding:92px 0}
+.sec.bg2{background:var(--bg2)}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:1rem;padding:14px 26px;border-radius:40px;cursor:pointer;border:none;transition:.28s;white-space:nowrap}
+.btn svg{width:20px;height:20px}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 12px 26px -10px rgba(37,211,102,.6)}
+.btn-wa:hover{transform:translateY(-3px);box-shadow:0 18px 32px -12px rgba(37,211,102,.7)}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.5)}
+.btn-ghost:hover{background:rgba(255,255,255,.12);border-color:#fff}
+.btn-green{background:var(--green);color:#fff}
+.btn-green:hover{transform:translateY(-3px);background:var(--green2)}
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="logo lbo.png" type="image/x-icon">
-  <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+/* emblem + logo lockup */
+.lbo-emblem{width:100%;height:auto}
+.logo{display:flex;align-items:center;gap:12px}
+.logo .em{width:44px;height:44px;flex:0 0 auto;border-radius:50%;transition:box-shadow .35s}
+header:not(.scrolled) .logo .em{box-shadow:0 0 0 2px rgba(255,255,255,.55),0 5px 16px rgba(0,0,0,.28)}
+.logo .wm{line-height:1}
+.logo .wm b{display:block;font-weight:800;font-size:1.5rem;letter-spacing:.5px;color:var(--green);transition:.35s}
+.logo .wm small{display:block;font-weight:600;font-size:.54rem;letter-spacing:.22em;color:var(--muted);margin-top:2px;text-transform:uppercase}
 
+/* header */
+header{position:fixed;top:0;left:0;width:100%;z-index:100;transition:.35s;padding:16px 0}
+header.scrolled{background:rgba(255,255,255,.94);backdrop-filter:blur(12px);box-shadow:0 6px 25px -18px rgba(20,50,30,.5);padding:9px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between}
+header:not(.scrolled) .logo .wm b{color:#fff}
+header:not(.scrolled) .logo .wm small{color:rgba(255,255,255,.75)}
+.menu{display:flex;align-items:center;gap:30px}
+.menu a.navlink{font-weight:500;font-size:.96rem;color:#eaf3e6;transition:.25s}
+header.scrolled .menu a.navlink{color:var(--ink)}
+.menu a.navlink:hover{color:var(--leaf2)}
+header.scrolled .menu a.navlink:hover{color:var(--green3)}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px}
+.burger span{width:26px;height:2.5px;background:#fff;border-radius:2px;transition:.3s}
+header.scrolled .burger span{background:var(--green)}
+
+/* hero */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;color:#fff;padding:130px 0 120px;
+  background:radial-gradient(120% 90% at 80% 10%,#3C7A4B 0%,var(--green) 44%,var(--green2) 100%)}
+.hero .blob{position:absolute;border-radius:50%;filter:blur(80px)}
+.hero .b1{width:520px;height:520px;background:#5FA85A;top:-160px;right:-120px;opacity:.35}
+.hero .b2{width:420px;height:420px;background:#0f2c17;bottom:-160px;left:-120px;opacity:.6}
+.hero-deco{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden}
+.hero-deco .dots{position:absolute;inset:0;background-image:radial-gradient(rgba(180,220,170,.14) 1.4px,transparent 1.6px);background-size:28px 28px;-webkit-mask-image:radial-gradient(115% 80% at 82% 6%,#000 26%,transparent 70%);mask-image:radial-gradient(115% 80% at 82% 6%,#000 26%,transparent 70%);opacity:.6}
+.hero-deco svg{position:absolute;opacity:.5}
+.hero-deco .contour{top:2%;right:-6%;width:min(60%,760px)}
+.hero-deco .flow{bottom:6%;right:-6%;width:min(66%,900px);opacity:.4}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center;position:relative;z-index:2}
+.hero h1{font-size:clamp(2.1rem,5vw,3.4rem);font-weight:800;line-height:1.09;letter-spacing:-.015em}
+.hero h1 .hl{color:var(--lime);white-space:nowrap}
+.hero p.sub{margin-top:22px;font-size:1.16rem;color:#e2efdc;font-weight:300;max-width:560px}
+.hero .actions{margin-top:34px;display:flex;gap:16px;flex-wrap:wrap}
+.badges{margin-top:38px;display:flex;gap:24px;flex-wrap:wrap;align-items:center}
+.badge{display:flex;align-items:center;gap:10px;font-size:.9rem;color:#d7e6d0}
+.badge b{color:#fff;font-weight:600}
+.badge .dot{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.2)}
+.badge svg{width:18px;height:18px;stroke:var(--lime);fill:none;stroke-width:2}
+.hero-visual{position:relative;display:flex;justify-content:center;align-items:center;min-height:400px}
+.hero-em{width:min(78%,340px);filter:drop-shadow(0 30px 55px rgba(0,0,0,.4));animation:float 6s ease-in-out infinite}
+.hero-em .ring2{transform-origin:50% 50%;animation:spin 26s linear infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-20px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.leafp{position:absolute;color:var(--leaf2);opacity:.5;animation:drift linear infinite}
+@keyframes drift{0%{transform:translateY(20px) rotate(0);opacity:0}15%{opacity:.5}100%{transform:translateY(-160px) rotate(140deg);opacity:0}}
+.waves{position:absolute;bottom:-2px;left:0;width:100%;line-height:0;z-index:2}
+
+/* pain band */
+.painbar{background:linear-gradient(90deg,var(--green2),var(--green) 55%,#2f6b3f);color:#fff;position:relative;z-index:3;border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07)}
+.painbar .wrap{display:flex;align-items:center;gap:26px;padding:22px 0;flex-wrap:wrap;justify-content:center}
+.painbar .pi{display:flex;align-items:center;gap:16px;max-width:780px}
+.painbar .pico{flex:0 0 auto;width:48px;height:48px;border-radius:12px;background:rgba(224,169,75,.16);border:1px solid rgba(224,169,75,.42);display:flex;align-items:center;justify-content:center}
+.painbar .pico svg{width:25px;height:25px;stroke:var(--amber);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.painbar b{font-weight:700;font-size:1.05rem;display:block}
+.painbar small{color:#d5e6cd;font-weight:300;font-size:.94rem}
+@media(max-width:700px){.painbar .wrap{flex-direction:column;gap:16px;text-align:center}.painbar .pi{flex-direction:column;text-align:center}}
+
+/* stats */
+.stats{background:#fff;position:relative;z-index:3}
+.stats-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:56px 0;border-bottom:1px solid var(--line)}
+.stat{text-align:center}
+.stat .num{font-size:clamp(2rem,4vw,2.9rem);font-weight:800;color:var(--green);line-height:1}
+.stat .num span{color:var(--leaf)}
+.stat .lbl{margin-top:8px;color:var(--muted);font-size:.9rem;font-weight:500}
+@media(max-width:680px){.stats-inner{grid-template-columns:repeat(2,1fr);gap:30px 20px}}
+
+/* services */
+.svc-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:22px}
+.svc{flex:1 1 300px;max-width:362px;background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:30px 26px;transition:.32s;position:relative;overflow:hidden}
+.svc:hover{transform:translateY(-7px);box-shadow:var(--shadow);border-color:transparent}
+.svc .ico{width:56px;height:56px;border-radius:15px;background:linear-gradient(135deg,var(--green),var(--leaf));display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.svc .ico svg{width:28px;height:28px;stroke:#fff;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.svc h3{font-size:1.16rem;font-weight:700;color:var(--ink)}
+.svc p{margin-top:8px;color:var(--muted);font-size:.95rem}
+.svc .tag{position:absolute;top:16px;right:16px;font-size:.62rem;font-weight:700;letter-spacing:.08em;background:rgba(224,169,75,.14);color:#a9781f;padding:4px 9px;border-radius:20px;text-transform:uppercase}
+@media(max-width:900px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.svc-grid{grid-template-columns:1fr}}
+
+/* segments */
+.seg-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:18px;margin-top:44px}
+.seg{flex:1 1 300px;max-width:362px;background:var(--bg);border:1px solid var(--line);border-radius:15px;padding:22px;display:flex;align-items:center;gap:16px;transition:.3s}
+.seg:hover{border-color:var(--leaf);transform:translateY(-5px);box-shadow:var(--shadow-sm)}
+.seg .si{flex:0 0 auto;width:50px;height:50px;border-radius:13px;background:linear-gradient(135deg,var(--green2),var(--green3));display:flex;align-items:center;justify-content:center}
+.seg .si svg{width:25px;height:25px;stroke:#fff;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.seg h4{font-size:1.02rem;color:var(--ink);font-weight:600;line-height:1.2}
+.seg p{font-size:.82rem;color:var(--muted);margin-top:3px}
+@media(max-width:820px){.seg-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.seg-grid{grid-template-columns:1fr}}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:50px;align-items:center}
+.about-card{background:linear-gradient(160deg,var(--green),var(--green2));border-radius:24px;padding:40px 34px;color:#fff;text-align:center;box-shadow:var(--shadow)}
+.about-card .em{width:112px;margin:0 auto 18px}
+.about-card h3{font-size:1.5rem;font-weight:700}
+.about-card .role{color:var(--lime);font-size:.92rem;font-weight:600;margin-top:4px}
+.about-card p{color:#dcebd5;font-size:.94rem;font-weight:300;margin-top:16px}
+.about-card .creds{margin-top:22px;display:flex;flex-direction:column;gap:10px;text-align:left}
+.about-card .cred{display:flex;align-items:center;gap:10px;font-size:.86rem;color:#eaf5e4}
+.about-card .pill{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);border-radius:8px;padding:4px 9px;font-weight:600;font-size:.72rem;white-space:nowrap}
+.about-txt .title{margin-top:10px}
+.about-txt p{color:var(--muted);margin-top:16px}
+.about-txt b{color:var(--ink)}
+.about-txt .mission{margin-top:20px;padding-left:18px;border-left:3px solid var(--leaf);font-style:italic;color:var(--green2);font-weight:500}
+@media(max-width:840px){.about-grid{grid-template-columns:1fr;gap:34px}}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:s}
+.step{position:relative;padding:30px 22px;background:var(--bg);border:1px solid var(--line);border-radius:var(--r);transition:.3s}
+.step:hover{transform:translateY(-6px);box-shadow:var(--shadow-sm)}
+.step .circle{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--green),var(--leaf));color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:1.1rem;margin-bottom:16px}
+.step h4{font-size:1.05rem;color:var(--ink);font-weight:700}
+.step p{color:var(--muted);font-size:.9rem;margin-top:6px}
+@media(max-width:860px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:460px){.steps{grid-template-columns:1fr}}
+
+/* why */
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px 40px}
+.why{display:flex;gap:16px;align-items:flex-start}
+.why .ck{flex:0 0 auto;width:40px;height:40px;border-radius:11px;background:rgba(111,168,106,.16);display:flex;align-items:center;justify-content:center}
+.why .ck svg{width:22px;height:22px;stroke:var(--green3);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.why h4{font-size:1.04rem;color:var(--ink);font-weight:700}
+.why p{color:var(--muted);font-size:.92rem;margin-top:3px}
+@media(max-width:720px){.why-grid{grid-template-columns:1fr;gap:22px}}
+
+/* órgãos marquee */
+.orgaos{padding:70px 0 30px}
+.marquee{overflow:hidden;margin-top:36px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.marquee-track{display:flex;gap:14px;width:max-content;animation:scrollx 30s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+@keyframes scrollx{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.org-chip{flex:0 0 auto;white-space:nowrap;background:#fff;border:1px solid var(--line);border-radius:11px;padding:13px 22px;font-weight:700;color:var(--green2);font-size:.98rem;box-shadow:var(--shadow-sm)}
+
+/* faq */
+.faq{max-width:820px;margin:44px auto 0}
+.qa{border:1px solid var(--line);border-radius:14px;margin-bottom:12px;background:#fff;overflow:hidden}
+.qa summary{list-style:none;cursor:pointer;padding:20px 24px;font-weight:600;color:var(--ink);display:flex;justify-content:space-between;align-items:center;gap:16px}
+.qa summary::-webkit-details-marker{display:none}
+.qa .plus{flex:0 0 auto;font-size:1.4rem;color:var(--leaf);transition:.3s;font-weight:400}
+.qa[open] .plus{transform:rotate(45deg)}
+.qa .ans{padding:0 24px 20px;color:var(--muted);font-size:.95rem}
+
+/* training */
+.training{background:linear-gradient(135deg,var(--green),var(--green2));border-radius:24px;padding:44px 40px;display:grid;grid-template-columns:1.6fr .9fr;gap:30px;align-items:center;color:#fff;position:relative;overflow:hidden}
+.training .amberline{position:absolute;top:0;left:0;width:6px;height:100%;background:var(--lime)}
+.training .eyebrow{color:var(--lime)}
+.training h3{font-size:1.5rem;font-weight:700;margin-top:8px}
+.training p{color:#dcebd5;font-weight:300;margin-top:12px;font-size:.98rem}
+.ttags{margin-top:18px;display:flex;flex-wrap:wrap;gap:9px}
+.ttag{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:20px;padding:6px 14px;font-size:.82rem}
+.tcta{text-align:center}
+@media(max-width:760px){.training{grid-template-columns:1fr;gap:24px}}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:center;background:var(--bg2);border-radius:26px;padding:46px 42px;border:1px solid var(--line)}
+.contact .em{width:96px;margin-bottom:18px}
+.contact h2{font-size:clamp(1.5rem,3vw,2.1rem);font-weight:800;color:var(--ink);line-height:1.15}
+.contact .lead{margin:12px 0 0 0}
+.cinfo{margin-top:24px;display:flex;flex-direction:column;gap:14px}
+.ci{display:flex;align-items:center;gap:14px}
+.ci .ic{width:44px;height:44px;border-radius:12px;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.ci .ic svg{width:21px;height:21px;stroke:var(--green3);fill:none;stroke-width:1.9}
+.ci .t small{display:block;color:var(--muted);font-size:.76rem}
+.ci .t b{color:var(--ink);font-size:1rem}
+.contact-cta{background:linear-gradient(135deg,var(--green),var(--green2));border-radius:20px;padding:34px 30px;color:#fff;text-align:center}
+.contact-cta h3{font-size:1.24rem;font-weight:700}
+.contact-cta p{color:#dcebd5;font-weight:300;font-size:.94rem;margin:10px 0 22px}
+@media(max-width:820px){.contact{grid-template-columns:1fr;gap:30px;padding:36px 26px}}
+
+/* footer */
+footer{background:var(--green2);color:#cfe0c8;padding:60px 0 30px}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.1)}
+.foot-brand .logo .wm b{color:#fff}
+.foot-brand .logo .wm small{color:rgba(255,255,255,.7)}
+.foot-brand p{font-weight:300;font-size:.92rem;max-width:320px;margin-top:16px}
+.fcreds{margin-top:16px;display:flex;gap:8px;flex-wrap:wrap}
+.fcreds span{background:rgba(255,255,255,.08);border-radius:6px;padding:5px 10px;font-size:.75rem;font-weight:600;color:#eaf5e4}
+.fcol h5{color:#fff;font-size:.96rem;font-weight:600;margin-bottom:14px}
+.fcol a{display:block;color:#bcd2b4;font-size:.9rem;margin-bottom:9px;transition:.2s}
+.fcol a:hover{color:var(--lime)}
+.foot-tag{display:flex;align-items:center;justify-content:center;gap:14px;margin:22px 0;text-align:center}
+.foot-tag .ln{height:1px;flex:1;max-width:120px;background:linear-gradient(90deg,transparent,rgba(180,220,170,.4))}
+.foot-tag .ln.r{background:linear-gradient(90deg,rgba(180,220,170,.4),transparent)}
+.foot-tag span{font-size:.8rem;font-weight:700;letter-spacing:.16em;color:#b8d3af;text-transform:uppercase}
+.foot-tag svg{width:19px;height:19px;flex:0 0 auto}
+.foot-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:20px;font-size:.82rem;color:#9cb595;flex-wrap:wrap;gap:12px}
+
+/* floating wa + top */
+.wa-float{position:fixed;bottom:26px;right:26px;width:60px;height:60px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 14px 30px -8px rgba(37,211,102,.7);z-index:90;animation:pulse 2.6s infinite}
+.wa-float svg{width:32px;height:32px;fill:#fff}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+.top-btn{position:fixed;bottom:26px;left:26px;width:46px;height:46px;border-radius:12px;background:var(--green);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:.3s;z-index:90}
+.top-btn.show{opacity:1;pointer-events:auto}
+.top-btn svg{width:22px;height:22px;stroke:#fff;fill:none;stroke-width:2.5}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(30px);transition:.7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}.reveal.d4{transition-delay:.32s}
+
+/* mobile nav */
+@media(max-width:900px){
+  .menu{position:fixed;inset:0 0 0 auto;width:78%;max-width:320px;background:#fff;flex-direction:column;justify-content:center;gap:26px;transform:translateX(100%);transition:.4s;box-shadow:-20px 0 60px -20px rgba(0,0,0,.4);z-index:120}
+  .menu.open{transform:none}
+  .menu a.navlink{color:var(--ink);font-size:1.1rem}
+  .menu .btn-wa{margin-top:10px}
+  .burger{display:flex;z-index:130}
+  .hero-grid{grid-template-columns:1fr;gap:30px;text-align:center}
+  .hero-visual{order:-1;min-height:230px}
+  .badges{justify-content:center}
+  .hero .actions{justify-content:center}
+  .hero-deco .flow{opacity:.28}
+}
+@media(max-width:640px){.hero-deco .contour{width:96%;opacity:.35}.hero-deco .flow{display:none}.sec{padding:64px 0}}
+</style>
 </head>
 <body>
 
-  <!-- HERO -->
-  <section class="hero">
-
-    <div class="hero-text">
-
-      <img src="logo lbo.png" style="width: 18rem;margin-bottom: 2rem;border-radius: 20%;" alt="">
-
-      <h2>Monitoramento Ambiental</h2>
-
-      <p>
-        Soluções ambientais inteligentes para sua empresa.
-        Especialistas em tratamento de efluentes,
-        licenciamento ambiental e estações de tratamento.
-      </p>
-
-      <div class="buttons">
-        <a href="https://wa.me/5535910017236" class="btn">
-          📱 Entre em contato via WhatsApp
-        </a>
-
-      </div>
-
-    </div>
-
-    <div class="hero-image">
-      <img src="LBO!.png" alt="">
-    </div>
-
-  </section>
-
-  <!-- SOBRE -->
-  <section class="about">
-
-    <div class="about-image">
-      <img src="escritorio.png" alt="">
-    </div>
-
-    <div class="about-text">
-
-      <h3>Sobre a Empresa</h3>
-
-      <p>
-        A LBO atua oferecendo soluções completas para monitoramento
-        e gestão ambiental, auxiliando empresas na adequação às
-        exigências legais e na otimização dos processos industriais.
-      </p>
-
-      <p>
-        Nossa equipe trabalha com foco em eficiência operacional,
-        segurança ambiental e responsabilidade ambiental.
-      </p>
-
-    </div>
-
-  </section>
-
-  <!-- SERVIÇOS -->
-  <section class="services">
-
-    <h3>Serviços Prestados</h3>
-
-    <div class="service-grid">
-
-      <div class="card">
-
-        <i class="fa-solid fa-water"></i>
-
-        <h4>Tratamento de Efluentes Industriais</h4>
-
-      </div>
-
-      <div class="card">
-        <i class="fa-solid fa-gears"></i>
-        <h4>Controle Operacional</h4>
-      </div>
-
-      <div class="card">
-        <i class="fa-solid fa-ruler-combined"></i>
-        <h4>Dimensionamento de ETE</h4>
-      </div>
-
-      <div class="card">
-        <i class="fa-solid fa-chalkboard-user"></i>
-        <h4>Treinamento para Operadores</h4>
-      </div>
-
-      <div class="card">
-        <i class="fa-solid fa-leaf"></i>
-        <h4>Licenciamento Ambiental</h4> 
-      </div>
-
-      <div class="card">
-        <i class="fa-solid fa-shield-halved"></i>
-        <h4>Licenciamento Polícia Federal</h4> 
-      </div>
-
-      <div class="card">
-        <i class="fa-solid fa-flask"></i>
-        <h4>Produtos Químicos Controlados</h4>
-      </div>
-
-      <div class="card">
-        <i class="fa-solid fa-industry"></i>
-       <h4>Projeto e Instalação de Estação de Tratamento</h4> 
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- CONTATO -->
-  <section class="contact">
-
-    <h3>Entre em Contato</h3>
-
-    <p>
-      Solicite um orçamento ou tire dúvidas sobre os serviços.
-    </p>
-
-    <a href="https://wa.me/5535910017236" class="btn">
-      Chamar no WhatsApp
+<header id="header">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="LBO Consultoria Ambiental">
+      <span class="em"><svg viewBox="0 0 100 100" class="lbo-emblem"><defs><linearGradient id="ge1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6FA86A"/><stop offset="1" stop-color="#2E5E3C"/></linearGradient></defs><circle cx="50" cy="50" r="47" fill="url(#ge1)"/><path d="M50 21 C68 32 71 55 52 82 L48 82 C29 55 32 32 50 21 Z" fill="#fff"/><path d="M50 30 C50 45 50 62 50 84" fill="none" stroke="#2E5E3C" stroke-width="2.4" stroke-linecap="round"/><path d="M50 44 L40 40 M50 52 L61 47 M50 60 L41 57 M50 68 L60 64" fill="none" stroke="#2E5E3C" stroke-width="1.8" stroke-linecap="round" opacity=".85"/><path d="M67 63 C72 68 72 74 67 77 C62 74 62 68 67 63 Z" fill="#8FD0EC"/></svg></span>
+      <span class="wm"><b>LBO</b><small>Gestão Ambiental · Técnico Químico</small></span>
     </a>
+    <nav class="menu" id="menu">
+      <a class="navlink" href="#servicos">Serviços</a>
+      <a class="navlink" href="#sobre">Sobre</a>
+      <a class="navlink" href="#processo">Como funciona</a>
+      <a class="navlink" href="#segmentos">Segmentos</a>
+      <a class="navlink" href="#contato">Contato</a>
+      <a class="btn btn-wa nav-cta" href="https://wa.me/5535910017236?text=Ol%C3%A1%20Luciano%2C%20vim%20pelo%20site%20da%20LBO%20e%20gostaria%20de%20falar%20sobre%20consultoria%20ambiental." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.512 5.26l-.999 3.648 3.985-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg> WhatsApp</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
 
-  </section>
+<section class="hero" id="top">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="hero-deco">
+    <span class="dots"></span>
+    <svg class="contour" viewBox="0 0 400 340" fill="none" stroke="#A7D26A" stroke-width="1.2">
+      <path d="M400 40 C300 60 250 130 300 200 C340 255 300 320 220 330" opacity=".5"/>
+      <path d="M400 80 C310 100 270 160 315 220 C350 268 315 325 250 338" opacity=".38"/>
+      <path d="M400 120 C325 138 292 188 330 240 C360 282 335 330 280 344" opacity=".28"/>
+      <circle cx="300" cy="200" r="3.4" fill="#A7D26A" stroke="none"/><circle cx="315" cy="220" r="2.6" fill="#A7D26A" stroke="none"/>
+    </svg>
+    <svg class="flow" viewBox="0 0 900 300" fill="none" stroke="#8FC178" stroke-width="1">
+      <path d="M20 150 C260 60 420 60 640 150 C720 184 800 190 890 150" opacity=".4"/>
+      <path d="M20 175 C260 95 430 95 645 172 C725 202 805 206 890 172" opacity=".32"/>
+      <path d="M20 200 C260 130 440 130 650 194 C730 220 810 222 890 194" opacity=".24"/>
+      <path d="M20 128 C260 40 415 40 636 128 C718 162 798 170 890 128" opacity=".3"/>
+    </svg>
+  </div>
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <span class="eyebrow reveal" style="color:var(--lime)">Consultoria Ambiental & Química</span>
+      <h1 class="reveal d1">Licenciamento e conformidade com <span class="hl">respaldo técnico e químico</span>.</h1>
+      <p class="sub reveal d2">Licenciamento ambiental e de produtos químicos controlados (Polícia Federal), tratamento de efluentes e dimensionamento de ETE. A sua indústria regular, segura e em dia com os órgãos.</p>
+      <div class="actions reveal d3">
+        <a class="btn btn-wa" href="https://wa.me/5535910017236?text=Ol%C3%A1%20Luciano%2C%20vim%20pelo%20site%20da%20LBO%20e%20gostaria%20de%20falar%20sobre%20consultoria%20ambiental." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.512 5.26l-.999 3.648 3.985-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg> Falar com o Luciano</a>
+        <a class="btn btn-ghost" href="#servicos">Ver serviços</a>
+      </div>
+      <div class="badges reveal d4">
+        <div class="badge"><div class="dot"><svg viewBox="0 0 24 24"><path d="M12 2s6 6 6 11a6 6 0 01-12 0c0-5 6-11 6-11z"/></svg></div><span>Gestor<br><b>Ambiental</b></span></div>
+        <div class="badge"><div class="dot"><svg viewBox="0 0 24 24"><path d="M9 3h6M10 3v6l-4 9a2 2 0 002 3h8a2 2 0 002-3l-4-9V3"/></svg></div><span>Técnico<br><b>Químico</b></span></div>
+        <div class="badge"><div class="dot"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><span>Produtos controlados<br><b>Polícia Federal</b></span></div>
+      </div>
+    </div>
+    <div class="hero-visual" id="heroAnchor">
+      <svg class="hero-em" viewBox="0 0 100 100"><defs><linearGradient id="ghero" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6FA86A"/><stop offset="1" stop-color="#2E5E3C"/></linearGradient></defs><circle class="ring2" cx="50" cy="50" r="47" fill="url(#ghero)"/><circle cx="50" cy="50" r="47" fill="none" stroke="rgba(255,255,255,.2)" stroke-width="1.5"/><path d="M50 21 C68 32 71 55 52 82 L48 82 C29 55 32 32 50 21 Z" fill="#fff"/><path d="M50 30 C50 45 50 62 50 84" fill="none" stroke="#2E5E3C" stroke-width="2.4" stroke-linecap="round"/><path d="M50 44 L40 40 M50 52 L61 47 M50 60 L41 57 M50 68 L60 64" fill="none" stroke="#2E5E3C" stroke-width="1.8" stroke-linecap="round" opacity=".85"/><path d="M67 63 C72 68 72 74 67 77 C62 74 62 68 67 63 Z" fill="#8FD0EC"/></svg>
+    </div>
+  </div>
+  <div class="waves"><svg viewBox="0 0 1440 110" preserveAspectRatio="none"><path fill="#ffffff" d="M0,64L48,58.7C96,53,192,43,288,48C384,53,480,75,576,80C672,85,768,75,864,64C960,53,1056,43,1152,48C1248,53,1344,75,1392,85.3L1440,96L1440,110L0,110Z"></path></svg></div>
+</section>
 
-  <!-- RODAPÉ -->
-  <footer>
+<section class="painbar">
+  <div class="wrap">
+    <div class="pi">
+      <div class="pico"><svg viewBox="0 0 24 24"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+      <div><b>Precisa de licença ambiental, registro na Polícia Federal ou está com pendência nos órgãos?</b><small>Sua empresa usa produtos químicos controlados ou gera efluente? A LBO regulariza e mantém tudo em conformidade.</small></div>
+    </div>
+    <a class="btn btn-wa" href="https://wa.me/5535910017236?text=Ol%C3%A1%20Luciano%2C%20preciso%20regularizar%20licenciamento%2Fprodutos%20controlados." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.512 5.26l-.999 3.648 3.985-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg> Resolver agora</a>
+  </div>
+</section>
 
-    <h4>LBO Monitoramento Ambiental</h4>
+<section class="stats"><div class="wrap"><div class="stats-inner reveal">
+  <div class="stat"><div class="num">2</div><div class="lbl">Formações: Gestor Ambiental + Técnico Químico</div></div>
+  <div class="stat"><div class="num">PF</div><div class="lbl">Produtos químicos controlados</div></div>
+  <div class="stat"><div class="num">ETE</div><div class="lbl">Dimensionamento & operação</div></div>
+  <div class="stat"><div class="num">100<span>%</span></div><div class="lbl">Foco em conformidade</div></div>
+</div></div></section>
 
-    <p>Tel. (35) 91001-7236</p>
+<section class="sec" id="servicos">
+  <div class="wrap center">
+    <span class="eyebrow reveal">O que fazemos</span>
+    <h2 class="title reveal d1">Soluções ambientais e químicas para a sua indústria</h2>
+    <p class="lead reveal d2">Da documentação e licenças à operação da estação — cobrimos o lado legal e o lado técnico da conformidade.</p>
+  </div>
+  <div class="wrap" style="margin-top:44px"><div class="svc-grid">
+    <div class="svc reveal d1"><div class="ico"><svg viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-3"/><path d="M18 2l4 4-9 9-4 1 1-4z"/></svg></div><h3>Licenciamento Ambiental</h3><p>Licenças (LP, LI, LO), regularização e condicionantes junto a SUPRAM, FEAM, IEF e prefeituras.</p></div>
+    <div class="svc reveal d2"><div class="ico"><svg viewBox="0 0 24 24"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4.5V3.5h6v1"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Gestão de Condicionantes</h3><p>Monitoramento e cumprimento das condicionantes das licenças, com controle de prazos e relatórios aos órgãos.</p></div>
+    <div class="svc reveal d2"><span class="tag">Diferencial</span><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Licenciamento Polícia Federal</h3><p>Registro e licenças para empresas que produzem, usam ou comercializam produtos químicos controlados.</p></div>
+    <div class="svc reveal d3"><div class="ico"><svg viewBox="0 0 24 24"><path d="M9 3h6l1 4H8z"/><path d="M8 7v3l-3 9a2 2 0 002 3h10a2 2 0 002-3l-3-9V7"/></svg></div><h3>Produtos Químicos Controlados</h3><p>Mapas, escrituração e controle de estoque de produtos controlados, com respaldo de Técnico Químico.</p></div>
+    <div class="svc reveal d1"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2s6 6 6 11a6 6 0 01-12 0c0-5 6-11 6-11z"/><path d="M9 14a3 3 0 003 3"/></svg></div><h3>Tratamento de Efluentes</h3><p>Adequação, otimização e acompanhamento de sistemas de tratamento de efluentes industriais.</p></div>
+    <div class="svc reveal d2"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 20h16"/><path d="M6 20V9l6-4 6 4v11"/><path d="M9 20v-5h6v5"/></svg></div><h3>Dimensionamento de ETE</h3><p>Projeto e dimensionamento técnico de Estações de Tratamento de Efluentes sob medida para a sua carga.</p></div>
+    <div class="svc reveal d3"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l3-4 3 3 4-6"/></svg></div><h3>Controle Operacional & Treinamento</h3><p>Acompanhamento da operação e capacitação de operadores para rodar o sistema com autonomia.</p></div>
+  </div></div>
+</section>
 
-  </footer>
+<section class="sec bg2" id="sobre">
+  <div class="wrap about-grid">
+    <div class="about-card reveal">
+      <span class="em"><svg viewBox="0 0 100 100" class="lbo-emblem"><defs><linearGradient id="gab" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8FC178"/><stop offset="1" stop-color="#dff0d6"/></linearGradient></defs><circle cx="50" cy="50" r="47" fill="rgba(255,255,255,.1)" stroke="rgba(255,255,255,.35)" stroke-width="1.5"/><path d="M50 21 C68 32 71 55 52 82 L48 82 C29 55 32 32 50 21 Z" fill="#fff"/><path d="M50 30 C50 45 50 62 50 84" fill="none" stroke="#2E5E3C" stroke-width="2.4" stroke-linecap="round"/><path d="M50 44 L40 40 M50 52 L61 47 M50 60 L41 57 M50 68 L60 64" fill="none" stroke="#2E5E3C" stroke-width="1.8" stroke-linecap="round" opacity=".85"/><path d="M67 63 C72 68 72 74 67 77 C62 74 62 68 67 63 Z" fill="#8FD0EC"/></svg></span>
+      <h3>Luciano Batista de Oliveira</h3>
+      <div class="role">Fundador · Gestor Ambiental · Técnico Químico</div>
+      <p>A dupla formação — ambiental e química — permite enxergar o problema por inteiro: o licenciamento, a documentação legal e o processo químico que faz a estação funcionar.</p>
+      <div class="creds">
+        <div class="cred"><span class="pill">Gestão Ambiental</span> Licenciamento e conformidade</div>
+        <div class="cred"><span class="pill">Técnico Químico</span> Produtos controlados e processos</div>
+      </div>
+    </div>
+    <div class="about-txt reveal d2">
+      <span class="eyebrow">Quem é a LBO</span>
+      <h2 class="title">Consultoria ambiental com base técnica de verdade</h2>
+      <p>A <b>LBO</b> é a consultoria de <b>Luciano Batista de Oliveira</b>, especializada em <b>licenciamento ambiental</b>, <b>produtos químicos controlados</b> (Polícia Federal) e <b>tratamento de efluentes</b>. Unimos a visão de gestão ambiental ao conhecimento de química para resolver a regularização de ponta a ponta.</p>
+      <p>Atendemos indústrias em <b>Pouso Alegre</b> e em todo o <b>Sul de Minas</b>, cuidando desde a licença que falta até a operação da ETE que precisa rodar em conformidade.</p>
+      <p class="mission">"Conformidade ambiental não é papel na gaveta — é processo funcionando e empresa segura."</p>
+    </div>
+  </div>
+</section>
 
+<section class="sec" id="processo">
+  <div class="wrap center">
+    <span class="eyebrow reveal">Como funciona</span>
+    <h2 class="title reveal d1">Um caminho claro até a conformidade</h2>
+  </div>
+  <div class="wrap" style="margin-top:44px"><div class="steps">
+    <div class="step reveal d1"><div class="circle">1</div><h4>Diagnóstico</h4><p>Levantamento da situação ambiental, das licenças e dos produtos controlados da empresa.</p></div>
+    <div class="step reveal d2"><div class="circle">2</div><h4>Documentação & Licenças</h4><p>Elaboração e protocolo do licenciamento ambiental e dos registros na Polícia Federal.</p></div>
+    <div class="step reveal d3"><div class="circle">3</div><h4>Projeto & Adequação</h4><p>Dimensionamento de ETE, adequação do efluente e ajuste dos processos técnicos.</p></div>
+    <div class="step reveal d4"><div class="circle">4</div><h4>Acompanhamento</h4><p>Controle operacional, treinamento da equipe e manutenção da conformidade ao longo do tempo.</p></div>
+  </div></div>
+</section>
+
+<section class="sec bg2">
+  <div class="wrap center">
+    <span class="eyebrow reveal">Por que a LBO</span>
+    <h2 class="title reveal d1">Ambiental e química na mesma mão</h2>
+  </div>
+  <div class="wrap" style="margin-top:44px"><div class="why-grid">
+    <div class="why reveal d1"><div class="ck"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></div><div><h4>Dupla formação</h4><p>Gestor Ambiental e Técnico Químico — o legal e o técnico resolvidos juntos.</p></div></div>
+    <div class="why reveal d2"><div class="ck"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></div><div><h4>Especialista em produtos controlados</h4><p>Licenciamento e escrituração junto à Polícia Federal para químicos controlados.</p></div></div>
+    <div class="why reveal d1"><div class="ck"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></div><div><h4>Visão prática de operação</h4><p>Do projeto da ETE ao operador treinado — solução que funciona no dia a dia.</p></div></div>
+    <div class="why reveal d2"><div class="ck"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></div><div><h4>Foco em conformidade</h4><p>Licenças em dia, condicionantes cumpridas e empresa protegida de autuações.</p></div></div>
+    <div class="why reveal d1"><div class="ck"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></div><div><h4>Atendimento no Sul de Minas</h4><p>Base em Pouso Alegre, com atendimento presencial na região.</p></div></div>
+    <div class="why reveal d2"><div class="ck"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></div><div><h4>Capacitação de equipes</h4><p>Treinamento de operadores para autonomia e segurança na operação.</p></div></div>
+  </div></div>
+</section>
+
+<section class="sec" id="segmentos">
+  <div class="wrap center">
+    <span class="eyebrow reveal">Para quem trabalhamos</span>
+    <h2 class="title reveal d1">Segmentos que atendemos</h2>
+    <p class="lead reveal d2">Qualquer operação que precise de licença, gere efluente ou trabalhe com produtos químicos controlados.</p>
+  </div>
+  <div class="wrap"><div class="seg-grid">
+    <div class="seg reveal d1"><div class="si"><svg viewBox="0 0 24 24"><path d="M9 3h6l1 4H8z"/><path d="M8 7v3l-3 9a2 2 0 002 3h10a2 2 0 002-3l-3-9V7"/></svg></div><div><h4>Indústria Química</h4><p>Solventes, produtos controlados e insumos.</p></div></div>
+    <div class="seg reveal d2"><div class="si"><svg viewBox="0 0 24 24"><path d="M8 3l4 3 4-3 3 2-2 4-2-1v9H9v-9l-2 1-2-4z"/></svg></div><div><h4>Têxtil & Lavanderia Industrial</h4><p>Alta carga de efluente e uso intensivo de água.</p></div></div>
+    <div class="seg reveal d2"><div class="si"><svg viewBox="0 0 24 24"><path d="M2 20h20"/><path d="M4 20V8l5-3v15"/><path d="M9 20V5l6 3v12"/><path d="M15 20v-9l5 3v6"/></svg></div><div><h4>Metalurgia & Galvânica</h4><p>Efluentes e resíduos com controle rigoroso.</p></div></div>
+    <div class="seg reveal d3"><div class="si"><svg viewBox="0 0 24 24"><path d="M12 2s6 6 6 11a6 6 0 01-12 0c0-5 6-11 6-11z"/></svg></div><div><h4>Alimentício & Bebidas</h4><p>Alta carga orgânica e uso intensivo de água.</p></div></div>
+    <div class="seg reveal d1"><div class="si"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h6M9 11h6M9 15h4"/></svg></div><div><h4>Cosméticos & Farma</h4><p>Insumos controlados e conformidade sanitária.</p></div></div>
+    <div class="seg reveal d2"><div class="si"><svg viewBox="0 0 24 24"><path d="M3 12h13v6H3z"/><circle cx="6" cy="18" r="1.6"/><circle cx="13" cy="18" r="1.6"/><path d="M16 9h3l2 3v3h-5z"/><path d="M9 12V6h4l3 3"/></svg></div><div><h4>Postos & Combustíveis</h4><p>Licenciamento e adequação ambiental.</p></div></div>
+    <div class="seg reveal d3"><div class="si"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg></div><div><h4>Indústria em geral</h4><p>Qualquer empresa que precise regularizar.</p></div></div>
+  </div></div>
+</section>
+
+<section class="orgaos bg2">
+  <div class="wrap center">
+    <span class="eyebrow reveal">Atuação junto aos órgãos</span>
+    <h2 class="title reveal d1">Experiência com quem fiscaliza</h2>
+  </div>
+  <div class="wrap"><div class="marquee reveal d2"><div class="marquee-track">
+    <div class="org-chip">Polícia Federal</div><div class="org-chip">SUPRAM</div><div class="org-chip">FEAM</div><div class="org-chip">IEF</div><div class="org-chip">IBAMA</div><div class="org-chip">COPAM</div><div class="org-chip">Prefeituras</div>
+    <div class="org-chip">Polícia Federal</div><div class="org-chip">SUPRAM</div><div class="org-chip">FEAM</div><div class="org-chip">IEF</div><div class="org-chip">IBAMA</div><div class="org-chip">COPAM</div><div class="org-chip">Prefeituras</div>
+  </div></div></div>
+</section>
+
+<section class="sec" id="treinamentos">
+  <div class="wrap"><div class="training reveal">
+    <div class="amberline"></div>
+    <div>
+      <span class="eyebrow">Treinamento para operadores</span>
+      <h3>Capacite a sua equipe para operar a estação com segurança.</h3>
+      <p>Treinamentos práticos de operação de ETE, controle de parâmetros, uso e escrituração de produtos químicos e boas práticas de conformidade ambiental.</p>
+      <div class="ttags"><span class="ttag">Operação de ETE</span><span class="ttag">Controle de parâmetros</span><span class="ttag">Produtos controlados</span><span class="ttag">Conformidade legal</span></div>
+    </div>
+    <div class="tcta"><a class="btn btn-wa" href="https://wa.me/5535910017236?text=Ol%C3%A1%20Luciano%2C%20quero%20saber%20sobre%20treinamento%20para%20operadores." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.512 5.26l-.999 3.648 3.985-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg> Quero um treinamento</a></div>
+  </div></div>
+</section>
+
+<section class="sec bg2">
+  <div class="wrap center">
+    <span class="eyebrow reveal">Dúvidas frequentes</span>
+    <h2 class="title reveal d1">Perguntas comuns</h2>
+  </div>
+  <div class="wrap"><div class="faq">
+    <details class="qa reveal"><summary>Minha empresa usa produtos químicos controlados. Preciso de registro na Polícia Federal?<span class="plus">+</span></summary><div class="ans">Provavelmente sim. Empresas que produzem, usam ou comercializam produtos químicos controlados precisam de registro e licença de funcionamento junto à Polícia Federal, além de manter mapas e escrituração. A LBO cuida de todo esse processo.</div></details>
+    <details class="qa reveal"><summary>A LBO faz o licenciamento ambiental completo?<span class="plus">+</span></summary><div class="ans">Sim. Atuamos desde o enquadramento e a elaboração da documentação até o protocolo e acompanhamento das licenças (LP, LI e LO) junto aos órgãos ambientais, incluindo o cumprimento das condicionantes.</div></details>
+    <details class="qa reveal"><summary>Vocês também dimensionam e acompanham a ETE?<span class="plus">+</span></summary><div class="ans">Sim. Além do licenciamento, dimensionamos Estações de Tratamento de Efluentes, adequamos sistemas existentes, fazemos o controle operacional e treinamos os operadores.</div></details>
+    <details class="qa reveal"><summary>Atendem em quais regiões?<span class="plus">+</span></summary><div class="ans">Somos de Pouso Alegre-MG e atendemos presencialmente em todo o Sul de Minas. Fale com a gente pelo WhatsApp que avaliamos o seu caso.</div></details>
+  </div></div>
+</section>
+
+<section class="sec" id="contato">
+  <div class="wrap"><div class="contact reveal">
+    <div>
+      <span class="em"><svg viewBox="0 0 100 100" class="lbo-emblem"><defs><linearGradient id="gct" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6FA86A"/><stop offset="1" stop-color="#2E5E3C"/></linearGradient></defs><circle cx="50" cy="50" r="47" fill="url(#gct)"/><path d="M50 21 C68 32 71 55 52 82 L48 82 C29 55 32 32 50 21 Z" fill="#fff"/><path d="M50 30 C50 45 50 62 50 84" fill="none" stroke="#2E5E3C" stroke-width="2.4" stroke-linecap="round"/><path d="M50 44 L40 40 M50 52 L61 47 M50 60 L41 57 M50 68 L60 64" fill="none" stroke="#2E5E3C" stroke-width="1.8" stroke-linecap="round" opacity=".85"/><path d="M67 63 C72 68 72 74 67 77 C62 74 62 68 67 63 Z" fill="#8FD0EC"/></svg></span>
+      <h2>A sua regularização começa com uma conversa.</h2>
+      <p class="lead">Conte a sua demanda de licenciamento, efluentes ou produtos controlados. Resposta rápida e sem compromisso.</p>
+      <div class="cinfo">
+        <a class="ci" href="https://wa.me/5535910017236?text=Ol%C3%A1%20Luciano%2C%20vim%20pelo%20site%20da%20LBO." target="_blank" rel="noopener"><div class="ic"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg></div><div class="t"><small>WhatsApp / Telefone</small><b>(35) 91001-7236</b></div></a>
+        <div class="ci"><div class="ic"><svg viewBox="0 0 24 24"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div class="t"><small>Endereço</small><b>Rua Maria de Lourdes Soares, 36 · Bairro Belo Horizonte · Pouso Alegre - MG</b></div></div>
+      </div>
+    </div>
+    <div class="contact-cta">
+      <h3>Atendimento rápido pelo WhatsApp</h3>
+      <p>Clique, descreva a sua necessidade e fale direto com o Luciano.</p>
+      <a class="btn btn-wa" href="https://wa.me/5535910017236?text=Ol%C3%A1%20Luciano%2C%20vim%20pelo%20site%20da%20LBO." target="_blank" rel="noopener" style="justify-content:center"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.512 5.26l-.999 3.648 3.985-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg> Chamar no WhatsApp</a>
+    </div>
+  </div></div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="logo"><span class="em" style="width:44px"><svg viewBox="0 0 100 100" class="lbo-emblem"><defs><linearGradient id="gf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6FA86A"/><stop offset="1" stop-color="#2E5E3C"/></linearGradient></defs><circle cx="50" cy="50" r="47" fill="url(#gf)"/><path d="M50 21 C68 32 71 55 52 82 L48 82 C29 55 32 32 50 21 Z" fill="#fff"/><path d="M50 30 C50 45 50 62 50 84" fill="none" stroke="#2E5E3C" stroke-width="2.4" stroke-linecap="round"/><path d="M50 44 L40 40 M50 52 L61 47 M50 60 L41 57 M50 68 L60 64" fill="none" stroke="#2E5E3C" stroke-width="1.8" stroke-linecap="round" opacity=".85"/><path d="M67 63 C72 68 72 74 67 77 C62 74 62 68 67 63 Z" fill="#8FD0EC"/></svg></span><span class="wm"><b>LBO</b><small>Gestão Ambiental · Técnico Químico</small></span></div>
+        <p>Consultoria em licenciamento ambiental, produtos químicos controlados (Polícia Federal), tratamento de efluentes e dimensionamento de ETE.</p>
+        <div class="fcreds"><span>Gestor Ambiental</span><span>Técnico Químico</span><span>Pouso Alegre - MG</span></div>
+      </div>
+      <div class="fcol"><h5>Navegação</h5><a href="#servicos">Serviços</a><a href="#sobre">Sobre</a><a href="#processo">Como funciona</a><a href="#segmentos">Segmentos</a><a href="#treinamentos">Treinamentos</a></div>
+      <div class="fcol"><h5>Contato</h5><a href="https://wa.me/5535910017236" target="_blank" rel="noopener">WhatsApp (35) 91001-7236</a><a>Rua Maria de Lourdes Soares, 36</a><a>Bairro Belo Horizonte</a><a>Pouso Alegre · Minas Gerais</a></div>
+    </div>
+    <div class="foot-tag"><span class="ln"></span><svg viewBox="0 0 24 24" fill="none" stroke="#A7D26A" stroke-width="1.8"><path d="M12 2s6 6 6 11a6 6 0 01-12 0c0-5 6-11 6-11z"/></svg><span>Conformidade ambiental que funciona na prática</span><svg viewBox="0 0 24 24" fill="none" stroke="#A7D26A" stroke-width="1.8"><path d="M12 2s6 6 6 11a6 6 0 01-12 0c0-5 6-11 6-11z"/></svg><span class="ln r"></span></div>
+    <div class="foot-bottom">
+      <div>© <span id="yr"></span> LBO · Luciano Batista de Oliveira. Todos os direitos reservados.</div>
+      <div>Gestão Ambiental &amp; Técnico Químico · Sul de Minas</div>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5535910017236?text=Ol%C3%A1%20Luciano%2C%20vim%20pelo%20site%20da%20LBO." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.512 5.26l-.999 3.648 3.985-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></a>
+<button class="top-btn" id="topBtn" aria-label="Voltar ao topo"><svg viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg></button>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+const header=document.getElementById('header'),topBtn=document.getElementById('topBtn');
+addEventListener('scroll',()=>{header.classList.toggle('scrolled',scrollY>60);topBtn.classList.toggle('show',scrollY>500);},{passive:true});
+const burger=document.getElementById('burger'),menu=document.getElementById('menu');
+burger.addEventListener('click',()=>menu.classList.toggle('open'));
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+topBtn.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+// floating leaf particles in hero
+(function(){const hero=document.querySelector('.hero-visual');if(!hero)return;const N=6;for(let i=0;i<N;i++){const s=document.createElement('span');s.className='leafp';s.innerHTML='<svg width="16" height="16" viewBox="0 0 100 100"><path d="M50 15 C72 30 74 60 52 88 L48 88 C26 60 28 30 50 15 Z" fill="currentColor"/></svg>';s.style.left=(10+i*15)+'%';s.style.bottom='0';s.style.animationDuration=(5+i*1.3)+'s';s.style.animationDelay=(i*0.9)+'s';hero.appendChild(s);}})();
+</script>
 </body>
 </html>
